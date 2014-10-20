@@ -9,4 +9,14 @@
 
 Listing view
 <br/>
-<?php echo route('get.post.listing'); ?>
+<?php echo route('get.post.listing');
+    echo
+    print_r($posts);
+?>
+
+<?php
+
+
+
+?>
+
