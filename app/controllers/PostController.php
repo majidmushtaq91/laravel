@@ -10,8 +10,16 @@ class PostController extends BaseController
 {
 
     public function listing() {
+        $posts = New Stdclass();
 
-        return View::make('post.listing');
+
+            $posts->title  = 'title ';
+            $posts->author  = 'author ';
+            $posts->description = 'Description ';
+
+
+
+        return View::make('post.listing')->with('posts', $posts);
     }
 
     public function single($id,$slug) {
