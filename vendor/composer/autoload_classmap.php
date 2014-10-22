@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AddPermission' => $baseDir . '/app/database/migrations/2014_10_22_141801_add-permission.php',
     'BaseController' => $baseDir . '/app/controllers/BaseController.php',
     'Boris\\Boris' => $vendorDir . '/d11wtq/boris/lib/Boris/Boris.php',
     'Boris\\CLIOptionsHandler' => $vendorDir . '/d11wtq/boris/lib/Boris/CLIOptionsHandler.php',
@@ -28,6 +29,9 @@ return array(
     'ClassPreloader\\Parser\\DirVisitor' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/DirVisitor.php',
     'ClassPreloader\\Parser\\FileVisitor' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/FileVisitor.php',
     'ClassPreloader\\Parser\\NodeTraverser' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/NodeTraverser.php',
+    'ContactController' => $baseDir . '/app/controllers/ContactController.php',
+    'CreatePostsTable' => $baseDir . '/app/database/migrations/2014_10_22_172014_create_posts_table.php',
+    'CreateUsersTable' => $baseDir . '/app/database/migrations/2014_10_22_140256_create_users_table.php',
     'Crypt_AES' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/AES.php',
     'Crypt_Base' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Base.php',
     'Crypt_Blowfish' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Blowfish.php',
@@ -687,6 +691,7 @@ return array(
     'Patchwork\\TurkishUtf8' => $vendorDir . '/patchwork/utf8/class/Patchwork/TurkishUtf8.php',
     'Patchwork\\Utf8' => $vendorDir . '/patchwork/utf8/class/Patchwork/Utf8.php',
     'Patchwork\\Utf8\\Bootup' => $vendorDir . '/patchwork/utf8/class/Patchwork/Utf8/Bootup.php',
+    'PostController' => $baseDir . '/app/controllers/PostController.php',
     'Predis\\Autoloader' => $vendorDir . '/predis/predis/lib/Predis/Autoloader.php',
     'Predis\\BasicClientInterface' => $vendorDir . '/predis/predis/lib/Predis/BasicClientInterface.php',
     'Predis\\Client' => $vendorDir . '/predis/predis/lib/Predis/Client.php',
@@ -1567,6 +1572,7 @@ return array(
     'System_SSH_Agent_Identity' => $vendorDir . '/phpseclib/phpseclib/phpseclib/System/SSH/Agent.php',
     'TestCase' => $baseDir . '/app/tests/TestCase.php',
     'User' => $baseDir . '/app/models/User.php',
+    'UserController' => $baseDir . '/app/controllers/UserController.php',
     'Whoops\\Exception\\ErrorException' => $vendorDir . '/filp/whoops/src/Whoops/Exception/ErrorException.php',
     'Whoops\\Exception\\Formatter' => $vendorDir . '/filp/whoops/src/Whoops/Exception/Formatter.php',
     'Whoops\\Exception\\Frame' => $vendorDir . '/filp/whoops/src/Whoops/Exception/Frame.php',
