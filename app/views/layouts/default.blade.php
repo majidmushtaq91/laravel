@@ -5,7 +5,12 @@
 </head>
 <body>
 
+@include('partials.menu')
+
 @yield('content')
 
+@section('sidebar')
+    <h2>Sidebar</h2>
+@show
 </body>
 </html>

@@ -11,3 +11,10 @@
     @endif
 
 @stop
+
+@section('sidebar')
+@parent
+<ul>
+    <li>Hello WOrld</li>
+</ul>
+@stop

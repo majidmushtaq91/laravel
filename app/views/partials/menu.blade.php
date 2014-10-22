@@ -1,15 +1,13 @@
-@extends('layouts.default')
+<?php
+/**
+ * Created by PhpStorm.
+ * User: majid
+ * Date: 10/22/14
+ * Time: 6:48 PM
+ */
+?>
 
-@section('content')
-
-<p>{{{ $user->email or 'Majid@samtechpk.com' }}}</p>
-
-@stop
-
-
-@section('sidebar')
-@parent
-<ul>
+<ul class="nav">
     <li><a href="#">Link</a></li>
     <li><a href="#">Link</a></li>
     <li><a href="#">Link</a></li>
@@ -17,5 +15,3 @@
     <li><a href="#">Link</a></li>
     <li><a href="#">Link</a></li>
 </ul>
-
-@stop
