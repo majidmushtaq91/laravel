@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AddPermission' => $baseDir . '/app/database/migrations/2014_10_22_141801_add-permission.php',
+    'AddStatusColumnToPostsTable' => $baseDir . '/app/database/migrations/2014_10_22_175930_add_status_column_to_posts_table.php',
     'BaseController' => $baseDir . '/app/controllers/BaseController.php',
     'Boris\\Boris' => $vendorDir . '/d11wtq/boris/lib/Boris/Boris.php',
     'Boris\\CLIOptionsHandler' => $vendorDir . '/d11wtq/boris/lib/Boris/CLIOptionsHandler.php',
@@ -30,8 +31,10 @@ return array(
     'ClassPreloader\\Parser\\FileVisitor' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/FileVisitor.php',
     'ClassPreloader\\Parser\\NodeTraverser' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/NodeTraverser.php',
     'ContactController' => $baseDir . '/app/controllers/ContactController.php',
-    'CreatePostsTable' => $baseDir . '/app/database/migrations/2014_10_22_172014_create_posts_table.php',
+    'CreatePostsTable' => $baseDir . '/app/database/migrations/2014_10_22_173604_create_posts_table.php',
+    'CreateSettingsTable' => $baseDir . '/app/database/migrations/2014_10_22_173814_create_settings_table.php',
     'CreateUsersTable' => $baseDir . '/app/database/migrations/2014_10_22_140256_create_users_table.php',
+    'CreateWidgetsTable' => $baseDir . '/app/database/migrations/2014_10_22_173751_create_widgets_table.php',
     'Crypt_AES' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/AES.php',
     'Crypt_Base' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Base.php',
     'Crypt_Blowfish' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Blowfish.php',

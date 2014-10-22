@@ -9,22 +9,8 @@ class UserController extends \BaseController {
 	 */
 	public function index()
 	{
-		$users = array();
-        for($i=1; $i < 4; $i++) {
-
-            $user = new StdClass;
-            $user->email = "user{$i}@samtechpk.com";
-            if($i == 3) {
-
-            }else {
-                $user->password = Hash::make("mysecret{$i}");
-            }
-
-
-            $users[] = $user;
-
-        }
-
+        $users = DB::table('users')->get();
+        //dd(DB::getQueryLog());
         return View::make('user.index', compact('users'));
 	}
 
@@ -59,10 +45,7 @@ class UserController extends \BaseController {
 	 */
 	public function show($id)
 	{
-
-            $user = new StdClass;
-            $user->email = "user@samtechpk.com";
-            $user->password = Hash::make("mysecret");
+        $user = DB::table('users')->find($id);
 
         return View::make('user.show', compact('user'));
 	}
