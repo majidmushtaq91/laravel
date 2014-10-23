@@ -7,7 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AddPermission' => $baseDir . '/app/database/migrations/2014_10_22_141801_add-permission.php',
-    'AddStatusColumnToPostsTable' => $baseDir . '/app/database/migrations/2014_10_22_175930_add_status_column_to_posts_table.php',
     'BaseController' => $baseDir . '/app/controllers/BaseController.php',
     'Boris\\Boris' => $vendorDir . '/d11wtq/boris/lib/Boris/Boris.php',
     'Boris\\CLIOptionsHandler' => $vendorDir . '/d11wtq/boris/lib/Boris/CLIOptionsHandler.php',

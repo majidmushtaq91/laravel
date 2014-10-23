@@ -32,10 +32,11 @@ class PostController extends BaseController
             'title' => 'A new title with array',
             'content' => 'A simple content for this post which is inserted by mass assignment !',
             'status' => 1,
+            'user_id' => 1,
         );
 
         Post::create($data);
-        dd('Post inserted');
+        dd($data);
     }
     public function update($id) {
 
@@ -50,6 +51,19 @@ class PostController extends BaseController
         $post = Post::find($id);
         $post->delete();
         dd('post has been removed !');
+    }
+
+    public function create() {
+
+      if(isset($_POST['title'])) {
+          $data = $_POST;
+          Post::create($data);
+          dd($data);
+      }
+
+
+       return View::make('post.create');
+       //
     }
 
 }

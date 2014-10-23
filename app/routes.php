@@ -19,6 +19,7 @@ Route::get('post/{id}', array('uses'=> 'PostController@single','as' => 'get.post
 Route::get('post/update/{id}', array('uses'=> 'PostController@update','as' => 'get.post.single'))->where(array('id' => '[1-9][0-9]*+'));
 Route::get('post/insert', array('uses' => 'PostController@insert', 'as' => 'get.post.insert'));
 Route::get('post/detroy/{id}', array('uses' => 'PostController@destroy', 'as' => 'get.post.delete'));
+Route::get('post/create', array('uses' => 'PostController@create', 'as' => 'get.post.create'));
 Route::resource('user', 'UserController');
 
 //Route::group(array('before' => 'auth'), function() {

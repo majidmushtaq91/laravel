@@ -3,11 +3,16 @@
 @section('content')
 
 
+<?php $i = 1; ?>
 @foreach($posts as $post)
 
-    <h1>{{{ $post->title}}}</h1>
-@endforeach
+    <h4>{{{$i}}} : {{{ $post->title}}}</h4>
+    <p>{{{$post->content}}}</p>
+    <i></i>
+    <hr />
 
+<?php $i++?>
+@endforeach
 
 @stop
 
@@ -15,9 +20,6 @@
 @parent
 <ul>
     <li>Hello WOrld</li>
-    <div class="form-group">
-        {{  Form::label('username', 'Username:' ) }}
-        {{ Form::text('username', null, ['class' => 'control-group']) }}
-    </div>
+
 </ul>
 @stop
