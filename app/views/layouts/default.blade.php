@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Users</title>
-</head>
-<body>
+@include('layouts.header')
+
+
 
 @include('partials.menu')
-
+<div class="container theme-showcase" role="main">
 @yield('content')
 
 @section('sidebar')
     <h2>Sidebar</h2>
 @show
-</body>
-</html>
+</div>
+
+
+@include('layouts.header')
