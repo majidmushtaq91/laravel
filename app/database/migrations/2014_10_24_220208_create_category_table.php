@@ -1,9 +1,9 @@
 <?php
 
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
 
-class CreateWidgetsTable extends Migration {
+class CreateCategoryTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,13 +12,14 @@ class CreateWidgetsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('widgets', function(Blueprint $table)
+		Schema::create('categories', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->integer('widget_id');
+			$table->string('name');
 			$table->timestamps();
 		});
 	}
+
 
 	/**
 	 * Reverse the migrations.
@@ -27,7 +28,7 @@ class CreateWidgetsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('widgets');
+		Schema::drop('category');
 	}
 
 }

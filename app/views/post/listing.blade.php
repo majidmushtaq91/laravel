@@ -4,16 +4,25 @@
 
 
 <?php $i = 1; ?>
+<table class="table">
+    <tr>
+        <th>Post #</th>
+        <th>Title</th>
+        <th>Posted By</th>
+    </tr>
 @foreach($posts as $post)
 
-    <h4>{{{$i}}} : {{{ $post->title}}}</h4>
-    <p>{{{$post->content}}}</p>
-    <i></i>
-    <hr />
+    <tr>
+        <td>{{{$i}}}</td>
+        <td>{{{$post->content}}}</td>
+        <td>user id #</td>
+    </tr>
+
 
 <?php $i++?>
 @endforeach
 
+</table>
 @stop
 
 @section('sidebar')

@@ -10,17 +10,21 @@ class PostController extends BaseController
 {
 
     public function listing() {
-        $posts = Post::all();
+        $posts = Post::with('user')->get();
         //$posts = Post::where('title', 'LIKE', '%abc%')->get();
         //$posts = Post::where('title', 'LIKE', '%ab%')->take(1)->skip(1)->get();
 
         return View::make('post.listing', compact('posts'));
     }
 
+
+
     public function single($id) {
         $post = Post::find($id);
         return View::make('post.single')->with('post', $post);
     }
+
+
 
     public function insert(){
         //$post = new Post;
@@ -38,6 +42,9 @@ class PostController extends BaseController
         Post::create($data);
         dd($data);
     }
+
+
+
     public function update($id) {
 
         $post = Post::find($id);
@@ -47,11 +54,15 @@ class PostController extends BaseController
         dd('post updated : ' .  $post->title);
     }
 
+
+
     public function destroy($id) {
         $post = Post::find($id);
         $post->delete();
         dd('post has been removed !');
     }
+
+
 
     public function create() {
 
