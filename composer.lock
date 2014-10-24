@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b62aaab50b44290834c3e0d8fe1341fc",
+    "hash": "aad495210a63391369388c66457b0aee",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -267,16 +267,16 @@
         },
         {
             "name": "guzzle/guzzle",
-            "version": "v3.9.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "54991459675c1a2924122afbb0e5609ade581155"
+                "reference": "3c0ca2255751631f1dd64eb16bbe3b9440258297"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/54991459675c1a2924122afbb0e5609ade581155",
-                "reference": "54991459675c1a2924122afbb0e5609ade581155",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/3c0ca2255751631f1dd64eb16bbe3b9440258297",
+                "reference": "3c0ca2255751631f1dd64eb16bbe3b9440258297",
                 "shasum": ""
             },
             "require": {
@@ -355,7 +355,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-08-11 04:32:36"
+            "time": "2014-10-15 19:36:56"
         },
         {
             "name": "ircmaxell/password-compat",
@@ -1654,17 +1654,17 @@
         },
         {
             "name": "symfony/process",
-            "version": "v2.5.5",
+            "version": "v2.5.6",
             "target-dir": "Symfony/Component/Process",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "8a1ec96c4e519cee0fb971ea48a1eb7369dda54b"
+                "reference": "9bbacbb3a7a27b17c0d51e2f126f59e0e588ad3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/8a1ec96c4e519cee0fb971ea48a1eb7369dda54b",
-                "reference": "8a1ec96c4e519cee0fb971ea48a1eb7369dda54b",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/9bbacbb3a7a27b17c0d51e2f126f59e0e588ad3a",
+                "reference": "9bbacbb3a7a27b17c0d51e2f126f59e0e588ad3a",
                 "shasum": ""
             },
             "require": {
@@ -1697,7 +1697,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2014-09-23 05:25:11"
+            "time": "2014-10-01 05:50:18"
         },
         {
             "name": "symfony/routing",
@@ -1768,7 +1768,7 @@
         },
         {
             "name": "symfony/security-core",
-            "version": "v2.5.5",
+            "version": "v2.5.6",
             "target-dir": "Symfony/Component/Security/Core",
             "source": {
                 "type": "git",
@@ -1830,17 +1830,17 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v2.5.5",
+            "version": "v2.5.6",
             "target-dir": "Symfony/Component/Translation",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Translation.git",
-                "reference": "170c0d895616e1a6a35681ffb0b9e339f58ab928"
+                "reference": "362fe4da2cfe587f72d57aaa2f89e6b61c05dedf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Translation/zipball/170c0d895616e1a6a35681ffb0b9e339f58ab928",
-                "reference": "170c0d895616e1a6a35681ffb0b9e339f58ab928",
+                "url": "https://api.github.com/repos/symfony/Translation/zipball/362fe4da2cfe587f72d57aaa2f89e6b61c05dedf",
+                "reference": "362fe4da2cfe587f72d57aaa2f89e6b61c05dedf",
                 "shasum": ""
             },
             "require": {
@@ -1882,7 +1882,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "http://symfony.com",
-            "time": "2014-09-23 05:25:11"
+            "time": "2014-10-01 05:50:18"
         },
         {
             "name": "way/generators",
@@ -1937,6 +1937,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "guzzle/guzzle": 20,
         "schickling/backup": 20
     },
     "prefer-stable": false,
