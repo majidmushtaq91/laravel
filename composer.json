@@ -1,4 +1,4 @@
-{
+    {
 	"name": "laravel/laravel",
 	"description": "The Laravel Framework.",
 	"keywords": ["framework", "laravel"],
@@ -6,7 +6,11 @@
 	"require": {
 		"laravel/framework": "4.2.*",
 		"way/generators": "~2.0",
+<<<<<<< HEAD
 		"schickling/backup": "dev-master"
+=======
+        "schickling/backup": "dev-master"
+>>>>>>> 4f330ea34cb9718c3116fd68f32ea4fcef76ad0f
 	},
 	"autoload": {
 		"classmap": [
