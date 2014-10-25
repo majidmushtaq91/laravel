@@ -21,10 +21,14 @@
 
 <div class="panel panel-danger">
     <div class="panel-heading">
-        <h3 class="panel-title">Panel title</h3>
+        <h3 class="panel-title">Categories</h3>
     </div>
     <div class="panel-body">
-        Panel content
+        @foreach($user->categories as $cat )
+        <li>
+            {{{ $cat->name }}}
+        </li>
+        @endforeach
     </div>
 </div>
 @stop

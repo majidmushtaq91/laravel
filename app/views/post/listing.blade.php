@@ -14,7 +14,7 @@
 
     <tr>
         <td>{{{$i}}}</td>
-        <td>{{{$post->content}}}</td>
+        <td>{{{$post->title}}}</td>
         <td>user id #</td>
     </tr>
 

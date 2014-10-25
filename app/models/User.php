@@ -9,6 +9,10 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 
 	use UserTrait, RemindableTrait;
 
+    public static $rules = array(
+        'email' => 'required|email',
+        'password' => 'size:5'
+    );
 	/**
 	 * The database table used by the model.
 	 *
@@ -28,6 +32,9 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
         return $this->hasMany('Post');
     }
 
+    public function phone(){
+        return $this->hasOne('Phone');
+    }
 
     public function categories(){
 

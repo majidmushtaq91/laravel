@@ -33,7 +33,7 @@ class UserController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+        $validator = Validator::make( Input::all(), User::$rules );
 	}
 
 
@@ -46,7 +46,7 @@ class UserController extends \BaseController {
 	public function show($id)
 	{
         //$user = DB::table('users')->find($id);
-        $user = User::find($id);
+        $user = User::with('categories')->find($id);
         return View::make('user.show', compact('user'));
 	}
 
@@ -59,7 +59,8 @@ class UserController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		//
+        $user = User::find($id);
+		return View::make('user.edit', compact('user'));
 	}
 
 
@@ -71,7 +72,17 @@ class UserController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		//
+
+        $validator = Validator::make( Input::all(), User::$rules );
+
+        if($validator->fails()){
+
+            return Redirect::back()->withInput()->withErrors($validator);
+
+        }
+
+        return Redirect::back()->withInput();
+
 	}
 
 

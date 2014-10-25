@@ -7,7 +7,8 @@
 		"laravel/framework": "4.2.*",
 		"way/generators": "~2.0",
 		"guzzle/guzzle": "3.9.*@dev",
-		"schickling/backup": "dev-master"
+		"schickling/backup": "dev-master",
+		"fzaninotto/faker": "1.5.*@dev"
 
 	},
 	"autoload": {
